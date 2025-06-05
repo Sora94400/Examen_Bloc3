@@ -1,6 +1,7 @@
 <?php
-    require_once('config.php');
 
+require_once('config.php');
+$pdo = connectDB();
 
 // Récupérer le nombre total de livres
 $queryTotalBooks = "SELECT COUNT(*) as total_books FROM livres";

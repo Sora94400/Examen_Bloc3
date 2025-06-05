@@ -1,12 +1,39 @@
-# evaluation-librairie
+# Système de Gestion des Utilisateurs
 
-**README - Initialisation du Projet en Local**
+Ce projet est un système de gestion des utilisateurs sécurisé développé en PHP natif avec une base de données MySQL.
 
-Bienvenue dans le projet de l'application de gestion de librairie. Suivez ces étapes pour initialiser l'application sur votre machine locale.
+## Fonctionnalités
 
----
+- Inscription des utilisateurs
+- Connexion sécurisée
+- Visualisation du profil
+- Déconnexion
 
-### Initialisation du Projet en Local
+## Sécurité
+
+- Hachage des mots de passe avec password_hash()
+- Protection contre les injections SQL avec PDO
+- Protection XSS avec htmlspecialchars()
+- Validation des entrées utilisateur
+- Sessions sécurisées
+
+## Installation
+
+1. Créez une base de données MySQL nommée 'librairiexyz'
+
+2. Importez le fichier SQL/users.sql pour créer la table des utilisateurs
+
+3. Configurez les paramètres de connexion dans config.php :
+   - host
+   - dbname
+   - username
+   - password
+
+4. Assurez-vous que PHP et MySQL sont installés et configurés
+
+5. Placez les fichiers dans votre répertoire web
+
+## Structure des fichiers
 
 1. **Cloner le Dépôt :**
    - Utilisez la commande suivante pour cloner le dépôt :
@@ -32,4 +59,4 @@ Bienvenue dans le projet de l'application de gestion de librairie. Suivez ces é
 Accédez à l'application en démarrant MAMP, WAMP, XAMP, AMPPS, LARAVEL ou autre.
 
 5. **Accéder à l'Application :**
-   - Ouvrez votre navigateur et allez à [http://localhost:8000](http://localhost:8000).                    
+   - Ouvrez votre navigateur et allez à [http://localhost:8000](http://localhost:8000).
